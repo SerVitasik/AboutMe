@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+@@include('html/head.html',{
+title:"Main page"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html',{})
+        <main class="page">
+            <section class="page__main main-block">
+                <div class="main-block__container">
+                    <div class="main-block__content">
+                        <div class="main-block__title title">
+                            <div class="title__label">КІ-201</div>
+                            <h1 class="title__value title__value_big">Віталій <span>Кулик.</span></h1>
+                        </div>
+                        <div class="main-block__text">
+                            <p>Я студент 3 курсу в Національному університеті «Чернігівська Політехніка», на
+                                спеціальность компютерна инженерия. Працюю з HTML, CSS, JavaScript and ReactJS.</p>
+                        </div>
+                        <div class="main-block__social">
+                            <a href=""><img src="@img/main/social/instagram.svg" alt="instagram"></a>
+                            <a href=""><img src="@img/main/social/github.svg" alt="github"></a>
+                            <a href=""><img src="@img/main/social/twitter.svg" alt="twitter"></a>
+                            <a href=""><img src="@img/main/social/linkedin.svg" alt="linkedin"></a>
+                        </div>
+                    </div>
+                    <div class="main-block__decor decor-main-block">
+                        <div class="decor-main-block__body">
+                            <div class="decor-main-block__image">
+                                <img class="decor-main-block__picture" src="@img/main/me.jpg" alt="human">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__education education">
+                <div class="education__container">
+                    <div class="education__title title">
+                        <h2 class="title__value">Освіта та навички</h2>
+                    </div>
+                    <div class="education__body">
+                        <div class="education__content">
+                            <div class="education__item item-education">
+                                <div class="item-education__title">Національний університет «Чернігівська Політехніка»
+                                </div>
+                                <div class="item-education__speciality">Бакалавр - Комп'ютерна інженерія</div>
+                                <div class="item-education__time">2020 - 2024</div>
+                            </div>
+                            <div class="education__item item-education">
+                                <div class="item-education__title">Школа 19 м. Чернігів</div>
+                                <div class="item-education__time">2009 - 2020</div>
+                            </div>
+                        </div>
+                        <div class="education__skills skills-education">
+                            <div class="skills-education__text">Я постійно навчаюсь у сфері фронтенду та експериментую з
+                                новими технологіями та фреймворками, і тут ви можете побачити короткий огляд моїх
+                                навичок.
+                            </div>
+                            <div class="skills-education__technology skills-education__technology_react">React</div>
+                            <div class="skills-education__technology skills-education__technology_html">HTML та CSS
+                            </div>
+                            <div class="skills-education__technology skills-education__technology_js">Javascript</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('html/footer.html',{})
+    </div>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
